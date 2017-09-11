@@ -4368,3 +4368,211 @@ Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
 
 
 Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-10 20:02:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.0ms)
+  Rendered static_pages/_me.html.erb (0.5ms)
+  Rendered static_pages/_work.html.erb (1.1ms)
+  Rendered static_pages/_artifacts.html.erb (2.1ms)
+  Rendered static_pages/_about.html.erb (13.2ms)
+  Rendered static_pages/_contact.html.erb (1.8ms)
+  Rendered static_pages/_footer.html.erb (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (57.5ms)
+  Rendered layouts/_flash_messages.html.erb (1.4ms)
+Completed 200 OK in 354ms (Views: 352.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-10 20:02:13 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-10 20:02:14 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:05 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-10 20:04:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-10 20:05:59 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.0ms)
+  Rendered static_pages/_me.html.erb (0.8ms)
+  Rendered static_pages/_work.html.erb (1.1ms)
+  Rendered static_pages/_artifacts.html.erb (0.7ms)
+  Rendered static_pages/_about.html.erb (16.7ms)
+  Rendered static_pages/_contact.html.erb (1.3ms)
+  Rendered static_pages/_footer.html.erb (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (61.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.8ms)
+Completed 200 OK in 400ms (Views: 399.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
