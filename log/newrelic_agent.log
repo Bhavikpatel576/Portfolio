@@ -1,0 +1,571 @@
+# Logfile created on 2017-09-05 18:01:32 -0700 by logger.rb/56438
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Environment: development
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : No known dispatcher detected.
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Application: development
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Net instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Rails 4 view instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-05 18:01:32 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Finished instrumentation
+[2017-09-05 18:01:33 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-05 18:02:05 -0700 bhaviks-MacBook-Air.local (74027)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-05 18:02:05 -0700 bhaviks-MacBook-Air.local (74027)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-05 18:02:27 -0700 bhaviks-MacBook-Air.local (74027)] INFO : Starting Agent shutdown
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Environment: development
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : No known dispatcher detected.
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Application: development
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Net instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Rails 4 view instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-05 18:02:44 -0700 bhaviks-MacBook-Air.local (74084)] INFO : Finished instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Environment: development
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : No known dispatcher detected.
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Application: development
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Net instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Rails 4 view instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-05 18:02:56 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Finished instrumentation
+[2017-09-05 18:02:57 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-05 18:03:00 -0700 bhaviks-MacBook-Air.local (74093)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-05 18:03:00 -0700 bhaviks-MacBook-Air.local (74093)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-05 18:03:15 -0700 bhaviks-MacBook-Air.local (74093)] INFO : Starting Agent shutdown
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Environment: development
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] INFO : No known dispatcher detected.
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Application: development
+[2017-09-06 15:53:49 -0700 bhaviks-MacBook-Air.local (98788)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Net instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Finished instrumentation
+[2017-09-06 15:53:50 -0700 bhaviks-MacBook-Air.local (98788)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Environment: development
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : No known dispatcher detected.
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Application: development
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Net instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Finished instrumentation
+[2017-09-06 15:54:41 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 15:54:47 -0700 bhaviks-MacBook-Air.local (98825)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-06 15:54:47 -0700 bhaviks-MacBook-Air.local (98825)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-06 16:03:58 -0700 bhaviks-MacBook-Air.local (98825)] INFO : Starting Agent shutdown
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Environment: development
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : No known dispatcher detected.
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Application: development
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Net instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:07:09 -0700 bhaviks-MacBook-Air.local (99181)] INFO : Finished instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Environment: development
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : No known dispatcher detected.
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Application: development
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Net instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:13:43 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Finished instrumentation
+[2017-09-06 16:13:44 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 16:13:52 -0700 bhaviks-MacBook-Air.local (99335)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-06 16:13:52 -0700 bhaviks-MacBook-Air.local (99335)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Environment: development
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] INFO : No known dispatcher detected.
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Application: development
+[2017-09-06 16:15:07 -0700 bhaviks-MacBook-Air.local (99390)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Net instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:15:08 -0700 bhaviks-MacBook-Air.local (99390)] INFO : Finished instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Environment: development
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : No known dispatcher detected.
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Application: development
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Net instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:15:17 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:15:18 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:15:18 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:15:18 -0700 bhaviks-MacBook-Air.local (99396)] INFO : Finished instrumentation
+[2017-09-06 16:17:17 -0700 bhaviks-MacBook-Air.local (99335)] INFO : Starting Agent shutdown
+[2017-09-06 16:18:11 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:18:11 -0700 bhaviks-MacBook-Air.local (99477)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:18:11 -0700 bhaviks-MacBook-Air.local (99477)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:18:11 -0700 bhaviks-MacBook-Air.local (99477)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Environment: development
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : No known dispatcher detected.
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Application: development
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Net instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:18:12 -0700 bhaviks-MacBook-Air.local (99477)] INFO : Finished instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Environment: development
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : No known dispatcher detected.
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Application: development
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Net instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:18:44 -0700 bhaviks-MacBook-Air.local (99497)] INFO : Finished instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Environment: development
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : No known dispatcher detected.
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Application: development
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Net instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:21:20 -0700 bhaviks-MacBook-Air.local (99552)] INFO : Finished instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Environment: development
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : No known dispatcher detected.
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Application: development
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Net instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:21:23 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:21:24 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:21:24 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:21:24 -0700 bhaviks-MacBook-Air.local (99558)] INFO : Finished instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Environment: development
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : No known dispatcher detected.
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Application: development
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Net instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:21:31 -0700 bhaviks-MacBook-Air.local (99562)] INFO : Finished instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Environment: development
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : No known dispatcher detected.
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Application: development
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Net instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 16:24:08 -0700 bhaviks-MacBook-Air.local (99608)] INFO : Finished instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Environment: development
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : No known dispatcher detected.
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Application: development
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Net instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:33:15 -0700 bhaviks-MacBook-Air.local (156)] INFO : Finished instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Environment: development
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : No known dispatcher detected.
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Application: development
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Net instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:33:28 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:33:29 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:33:29 -0700 bhaviks-MacBook-Air.local (165)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:33:29 -0700 bhaviks-MacBook-Air.local (165)] INFO : Finished instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Environment: development
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : No known dispatcher detected.
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Application: development
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Net instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:35:07 -0700 bhaviks-MacBook-Air.local (205)] INFO : Finished instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Environment: development
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : No known dispatcher detected.
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Application: development
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Net instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:36:05 -0700 bhaviks-MacBook-Air.local (741)] INFO : Finished instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Environment: development
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : No known dispatcher detected.
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Application: development
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Net instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:37:49 -0700 bhaviks-MacBook-Air.local (1106)] INFO : Finished instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Environment: development
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : No known dispatcher detected.
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Application: development
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Net instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:37:57 -0700 bhaviks-MacBook-Air.local (1111)] INFO : Finished instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Environment: development
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : No known dispatcher detected.
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Application: development
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Net instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:39:36 -0700 bhaviks-MacBook-Air.local (1150)] INFO : Finished instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Environment: development
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : No known dispatcher detected.
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Application: development
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Net instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:40:35 -0700 bhaviks-MacBook-Air.local (1178)] INFO : Finished instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Environment: development
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : No known dispatcher detected.
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Application: development
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Net instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:40:45 -0700 bhaviks-MacBook-Air.local (1185)] INFO : Finished instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Environment: development
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : No known dispatcher detected.
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Application: development
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Net instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:40:57 -0700 bhaviks-MacBook-Air.local (1194)] INFO : Finished instrumentation
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Environment: development
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] INFO : No known dispatcher detected.
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Application: development
+[2017-09-06 17:42:28 -0700 bhaviks-MacBook-Air.local (1442)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Net instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:42:29 -0700 bhaviks-MacBook-Air.local (1442)] INFO : Finished instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Environment: development
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : No known dispatcher detected.
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Application: development
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Net instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:42:30 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Finished instrumentation
+[2017-09-06 17:42:31 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 17:42:37 -0700 bhaviks-MacBook-Air.local (1446)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-06 17:42:37 -0700 bhaviks-MacBook-Air.local (1446)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-06 17:43:25 -0700 bhaviks-MacBook-Air.local (1446)] INFO : Starting Agent shutdown
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Environment: development
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : No known dispatcher detected.
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Application: development
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Net instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 17:44:02 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Finished instrumentation
+[2017-09-06 17:44:03 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 17:44:07 -0700 bhaviks-MacBook-Air.local (1498)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-06 17:44:07 -0700 bhaviks-MacBook-Air.local (1498)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-06 18:30:31 -0700 bhaviks-MacBook-Air.local (1498)] INFO : Starting Agent shutdown
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Environment: development
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : No known dispatcher detected.
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Application: development
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Net instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Rails 4 view instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Finished instrumentation
+[2017-09-06 18:30:37 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-06 18:30:41 -0700 bhaviks-MacBook-Air.local (2776)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-06 18:30:41 -0700 bhaviks-MacBook-Air.local (2776)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-07 10:12:56 -0700 bhaviks-MacBook-Air.local (2776)] INFO : Starting Agent shutdown
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Environment: development
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : No known dispatcher detected.
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Application: development
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Net instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Rails 4 view instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-07 16:26:12 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Finished instrumentation
+[2017-09-07 16:26:13 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-07 16:26:16 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-09-07 16:26:16 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-09-07 16:26:16 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Will re-attempt in 60 seconds
+[2017-09-07 16:27:16 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-09-07 16:27:16 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-09-07 16:27:16 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Will re-attempt in 120 seconds
+[2017-09-08 08:00:57 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-08 08:00:57 -0700 bhaviks-MacBook-Air.local (7522)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-08 08:13:58 -0700 bhaviks-MacBook-Air.local (7522)] INFO : Starting Agent shutdown
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Starting the New Relic agent in "development" environment.
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : To prevent agent startup add a NEW_RELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] WARN : No configuration file found. Working directory = /Users/bhavikpatel/Documents/GithubRepos/portfolio
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] WARN : Looked in these locations (based on defaults): /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/config/newrelic.yml, /Users/bhavikpatel/Documents/GithubRepos/portfolio/newrelic.yml, /Users/bhavikpatel/.newrelic/newrelic.yml, /Users/bhavikpatel/newrelic.yml
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Environment: development
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : No known dispatcher detected.
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Application: development
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'. You may also want to try linting your newrelic.yml to ensure it is valid YML.
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Net instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Rails 4 Controller instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Rails 4 view instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Installing Rails 4 Error instrumentation
+[2017-09-09 17:05:03 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Finished instrumentation
+[2017-09-09 17:05:04 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-09-09 17:05:07 -0700 bhaviks-MacBook-Air.local (77851)] ERROR : Invalid license key, please contact support@newrelic.com
+[2017-09-09 17:05:07 -0700 bhaviks-MacBook-Air.local (77851)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[2017-09-09 20:03:13 -0700 bhaviks-MacBook-Air.local (77851)] INFO : Starting Agent shutdown

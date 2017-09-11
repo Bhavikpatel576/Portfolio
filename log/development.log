@@ -1,0 +1,4370 @@
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 18:02:04 -0700
+
+ActiveRecord::NoDatabaseError - FATAL:  role "annapetry" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/rails:8:in `<top (required)>'
+  spring (1.7.2) lib/spring/client/rails.rb:28:in `call'
+  spring (1.7.2) lib/spring/client/command.rb:7:in `call'
+  spring (1.7.2) lib/spring/client.rb:30:in `run'
+  spring (1.7.2) bin/spring:49:in `<top (required)>'
+  spring (1.7.2) lib/spring/binstub.rb:11:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/9b90c5b165894b3d/variables" for 127.0.0.1 at 2017-09-05 18:02:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 18:02:58 -0700
+
+ActiveRecord::NoDatabaseError - FATAL:  role "annapetry" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/rails:8:in `<top (required)>'
+  spring (1.7.2) lib/spring/client/rails.rb:28:in `call'
+  spring (1.7.2) lib/spring/client/command.rb:7:in `call'
+  spring (1.7.2) lib/spring/client.rb:30:in `run'
+  spring (1.7.2) bin/spring:49:in `<top (required)>'
+  spring (1.7.2) lib/spring/binstub.rb:11:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/5671095675196300/variables" for 127.0.0.1 at 2017-09-05 18:02:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 18:03:01 -0700
+
+ActiveRecord::NoDatabaseError - FATAL:  role "annapetry" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/rails:8:in `<top (required)>'
+  spring (1.7.2) lib/spring/client/rails.rb:28:in `call'
+  spring (1.7.2) lib/spring/client/command.rb:7:in `call'
+  spring (1.7.2) lib/spring/client.rb:30:in `run'
+  spring (1.7.2) bin/spring:49:in `<top (required)>'
+  spring (1.7.2) lib/spring/binstub.rb:11:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/04869f7dd1016107/variables" for 127.0.0.1 at 2017-09-05 18:03:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 15:54:45 -0700
+
+ActiveRecord::NoDatabaseError - FATAL:  role "annapetry" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/rails:8:in `<top (required)>'
+  spring (1.7.2) lib/spring/client/rails.rb:28:in `call'
+  spring (1.7.2) lib/spring/client/command.rb:7:in `call'
+  spring (1.7.2) lib/spring/client.rb:30:in `run'
+  spring (1.7.2) bin/spring:49:in `<top (required)>'
+  spring (1.7.2) lib/spring/binstub.rb:11:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/0b8ddda07eb9aa84/variables" for 127.0.0.1 at 2017-09-06 15:54:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 16:13:51 -0700
+
+ActiveRecord::NoDatabaseError - FATAL:  role "bpatel" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+   () Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/rails:8:in `<top (required)>'
+  spring (1.7.2) lib/spring/client/rails.rb:28:in `call'
+  spring (1.7.2) lib/spring/client/command.rb:7:in `call'
+  spring (1.7.2) lib/spring/client.rb:30:in `run'
+  spring (1.7.2) bin/spring:49:in `<top (required)>'
+  spring (1.7.2) lib/spring/binstub.rb:11:in `<top (required)>'
+   () Users/bhavikpatel/Documents/GithubRepos/portfolio/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started POST "/__better_errors/c8582da77b070c9e/variables" for 127.0.0.1 at 2017-09-06 16:13:51 -0700
+
+
+Started POST "/__better_errors/c8582da77b070c9e/variables" for 127.0.0.1 at 2017-09-06 16:14:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 17:42:36 -0700
+
+ActiveRecord::NoDatabaseError - Unknown database 'mydb_dev'Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:53:in `process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:39:in `receive_data'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/eventmachine-1.2.5/lib/eventmachine.rb:194:in `run'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/backends/base.rb:73:in `start'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/e6de0da56a94a90b/variables" for 127.0.0.1 at 2017-09-06 17:42:36 -0700
+
+
+Started GET "/home" for 127.0.0.1 at 2017-09-06 17:42:52 -0700
+
+ActiveRecord::NoDatabaseError - Unknown database 'mydb_dev'Run `$ bin/rake db:create db:migrate` to create your database:
+  activerecord (4.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `rescue in mysql2_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/mysql2_adapter.rb:10:in `mysql2_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/bhavikpatel/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:86:in `block in pre_process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:84:in `pre_process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:53:in `process'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/connection.rb:39:in `receive_data'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/eventmachine-1.2.5/lib/eventmachine.rb:194:in `run'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/backends/base.rb:73:in `start'
+   () Users/bhavikpatel/.rvm/gems/ruby-2.3.3@global/gems/thin-1.7.2/lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/d56045426a76976e/variables" for 127.0.0.1 at 2017-09-06 17:42:53 -0700
+  [1m[36m (98.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (69.3ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (6.8ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/home" for 127.0.0.1 at 2017-09-06 17:44:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.9ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 17:44:09 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.0ms)
+  Rendered static_pages/_me.html.erb (1.3ms)
+  Rendered static_pages/_work.html.erb (1.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.8ms)
+  Rendered static_pages/_about.html.erb (11.9ms)
+  Rendered static_pages/_contact.html.erb (1.0ms)
+  Rendered static_pages/_footer.html.erb (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 409ms (Views: 407.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:09 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:09 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:09 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:09 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/petry.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 17:44:10 -0700
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2017-09-06 17:44:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 17:56:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.8ms)
+  Rendered static_pages/_me.html.erb (8.4ms)
+  Rendered static_pages/_work.html.erb (0.6ms)
+  Rendered static_pages/_artifacts.html.erb (0.5ms)
+  Rendered static_pages/_about.html.erb (41.1ms)
+  Rendered static_pages/_contact.html.erb (1.9ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 300ms (Views: 297.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 17:56:26 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 17:56:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.1ms)
+  Rendered static_pages/_me.html.erb (0.8ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.1ms)
+  Rendered static_pages/_about.html.erb (7.6ms)
+  Rendered static_pages/_contact.html.erb (0.5ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 17:56:53 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 17:56:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (3.0ms)
+  Rendered static_pages/_me.html.erb (3.5ms)
+  Rendered static_pages/_work.html.erb (0.9ms)
+  Rendered static_pages/_artifacts.html.erb (0.5ms)
+  Rendered static_pages/_about.html.erb (33.2ms)
+  Rendered static_pages/_contact.html.erb (1.2ms)
+  Rendered static_pages/_footer.html.erb (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (66.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 236ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:05:46 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:05:47 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:05:47 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:05:47 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:05:52 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:05:52 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:05:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:29:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.9ms)
+  Rendered static_pages/_me.html.erb (0.8ms)
+  Rendered static_pages/_work.html.erb (0.8ms)
+  Rendered static_pages/_artifacts.html.erb (0.4ms)
+  Rendered static_pages/_about.html.erb (38.1ms)
+  Rendered static_pages/_contact.html.erb (4.8ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (65.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 352ms (Views: 349.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:29:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.2ms)
+  Rendered static_pages/_work.html.erb (0.4ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (13.0ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (29.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 115ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:30:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.1ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (8.2ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:30:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:30:39 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.9ms)
+  Rendered static_pages/_me.html.erb (0.6ms)
+  Rendered static_pages/_work.html.erb (0.8ms)
+  Rendered static_pages/_artifacts.html.erb (1.4ms)
+  Rendered static_pages/_about.html.erb (13.2ms)
+  Rendered static_pages/_contact.html.erb (1.3ms)
+  Rendered static_pages/_footer.html.erb (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_flash_messages.html.erb (1.0ms)
+Completed 200 OK in 335ms (Views: 334.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:30:40 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:30:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.0ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.7ms)
+  Rendered static_pages/_about.html.erb (33.5ms)
+  Rendered static_pages/_contact.html.erb (1.8ms)
+  Rendered static_pages/_footer.html.erb (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (57.6ms)
+  Rendered layouts/_flash_messages.html.erb (1.0ms)
+Completed 200 OK in 224ms (Views: 217.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:39:54 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpg"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (66.4ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (344.3ms)
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:39:55 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:39:55 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:39:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.2ms)
+  Rendered static_pages/_me.html.erb (0.2ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.5ms)
+  Rendered static_pages/_about.html.erb (8.5ms)
+  Rendered static_pages/_contact.html.erb (0.3ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 115ms (Views: 114.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:40:43 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpg"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (104.5ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:40:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.8ms)
+  Rendered static_pages/_me.html.erb (0.4ms)
+  Rendered static_pages/_work.html.erb (4.6ms)
+  Rendered static_pages/_artifacts.html.erb (1.1ms)
+  Rendered static_pages/_about.html.erb (46.3ms)
+  Rendered static_pages/_contact.html.erb (1.7ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (89.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 260ms (Views: 258.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:42:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.4ms)
+  Rendered static_pages/_work.html.erb (0.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (16.0ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 191ms (Views: 190.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:43:29 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:43:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:44:45 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.2ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (16.6ms)
+  Rendered static_pages/_contact.html.erb (0.6ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (32.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 133ms (Views: 132.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:44:46 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpg"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (277.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.4ms)
+  Rendered static_pages/_me.html.erb (0.2ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.2ms)
+  Rendered static_pages/_about.html.erb (13.9ms)
+  Rendered static_pages/_contact.html.erb (0.3ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 109ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:49 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpg"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.8ms)
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:44:50 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.2ms)
+  Rendered static_pages/_me.html.erb (0.2ms)
+  Rendered static_pages/_work.html.erb (0.1ms)
+  Rendered static_pages/_artifacts.html.erb (0.2ms)
+  Rendered static_pages/_about.html.erb (7.5ms)
+  Rendered static_pages/_contact.html.erb (0.5ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:45:08 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:45:09 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:45:09 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:45:09 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:45:09 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:45:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.8ms)
+  Rendered static_pages/_me.html.erb (0.5ms)
+  Rendered static_pages/_work.html.erb (0.6ms)
+  Rendered static_pages/_artifacts.html.erb (0.4ms)
+  Rendered static_pages/_about.html.erb (37.8ms)
+  Rendered static_pages/_contact.html.erb (1.3ms)
+  Rendered static_pages/_footer.html.erb (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (59.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 235ms (Views: 232.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:52:29 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:52:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.4ms)
+  Rendered static_pages/_work.html.erb (0.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (17.6ms)
+  Rendered static_pages/_contact.html.erb (0.3ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (32.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 120ms (Views: 119.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:52:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.6ms)
+  Rendered static_pages/_artifacts.html.erb (0.2ms)
+  Rendered static_pages/_about.html.erb (11.6ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 117ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:52:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:56:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.7ms)
+  Rendered static_pages/_me.html.erb (0.5ms)
+  Rendered static_pages/_work.html.erb (0.5ms)
+  Rendered static_pages/_artifacts.html.erb (0.4ms)
+  Rendered static_pages/_about.html.erb (70.6ms)
+  Rendered static_pages/_contact.html.erb (0.8ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (95.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.2ms)
+Completed 200 OK in 274ms (Views: 272.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:56:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-06 18:56:19 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.4ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.2ms)
+  Rendered static_pages/_about.html.erb (9.2ms)
+  Rendered static_pages/_contact.html.erb (0.5ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (21.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/chain.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/tri.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/major-arc.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/geo.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/pyramid.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/minor-arc.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/vert.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/nook-case.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/assets/knives.jpg" for 127.0.0.1 at 2017-09-06 18:56:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.7ms)
+  Rendered static_pages/_me.html.erb (58.5ms)
+  Rendered static_pages/_work.html.erb (0.8ms)
+  Rendered static_pages/_artifacts.html.erb (8.8ms)
+  Rendered static_pages/_about.html.erb (36.8ms)
+  Rendered static_pages/_contact.html.erb (1.0ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (134.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 274ms (Views: 272.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/the-lovers.jpg" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-07 08:59:51 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 08:59:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (6.0ms)
+  Rendered static_pages/_me.html.erb (1.2ms)
+  Rendered static_pages/_work.html.erb (3.8ms)
+  Rendered static_pages/_artifacts.html.erb (1.9ms)
+  Rendered static_pages/_about.html.erb (42.7ms)
+  Rendered static_pages/_contact.html.erb (1.6ms)
+  Rendered static_pages/_footer.html.erb (1.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (82.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.6ms)
+Completed 200 OK in 233ms (Views: 231.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 09:10:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 09:13:01 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.3ms)
+  Rendered static_pages/_me.html.erb (0.4ms)
+  Rendered static_pages/_work.html.erb (9.5ms)
+  Rendered static_pages/_artifacts.html.erb (0.5ms)
+  Rendered static_pages/_about.html.erb (59.3ms)
+  Rendered static_pages/_contact.html.erb (1.1ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (101.0ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 340ms (Views: 338.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/ChApp-Room.jpg" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 09:13:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 09:22:12 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.3ms)
+  Rendered static_pages/_me.html.erb (5.3ms)
+  Rendered static_pages/_work.html.erb (7.5ms)
+  Rendered static_pages/_artifacts.html.erb (0.4ms)
+  Rendered static_pages/_about.html.erb (43.2ms)
+  Rendered static_pages/_contact.html.erb (1.9ms)
+  Rendered static_pages/_footer.html.erb (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (87.3ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 332ms (Views: 329.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/dang-thang.jpg" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 09:22:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 09:37:04 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.8ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (11.2ms)
+  Rendered static_pages/_artifacts.html.erb (0.5ms)
+  Rendered static_pages/_about.html.erb (34.1ms)
+  Rendered static_pages/_contact.html.erb (1.1ms)
+  Rendered static_pages/_footer.html.erb (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (73.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 272ms (Views: 269.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/HTBG.jpg" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 09:37:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.5ms)
+  Rendered static_pages/_me.html.erb (0.7ms)
+  Rendered static_pages/_work.html.erb (14.0ms)
+  Rendered static_pages/_artifacts.html.erb (0.6ms)
+  Rendered static_pages/_about.html.erb (46.6ms)
+  Rendered static_pages/_contact.html.erb (2.6ms)
+  Rendered static_pages/_footer.html.erb (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (91.7ms)
+  Rendered layouts/_flash_messages.html.erb (0.3ms)
+Completed 200 OK in 300ms (Views: 297.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 09:56:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.7ms)
+  Rendered static_pages/_me.html.erb (0.4ms)
+  Rendered static_pages/_work.html.erb (6.9ms)
+  Rendered static_pages/_artifacts.html.erb (1.1ms)
+  Rendered static_pages/_about.html.erb (23.2ms)
+  Rendered static_pages/_contact.html.erb (1.4ms)
+  Rendered static_pages/_footer.html.erb (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (65.1ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 231ms (Views: 229.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 10:01:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.0ms)
+  Rendered static_pages/_me.html.erb (0.8ms)
+  Rendered static_pages/_work.html.erb (0.9ms)
+  Rendered static_pages/_artifacts.html.erb (0.8ms)
+  Rendered static_pages/_about.html.erb (17.1ms)
+  Rendered static_pages/_contact.html.erb (1.2ms)
+  Rendered static_pages/_footer.html.erb (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (45.4ms)
+  Rendered layouts/_flash_messages.html.erb (1.3ms)
+Completed 200 OK in 317ms (Views: 315.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 16:26:16 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/css/style-mobile.css" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+ActionController::RoutingError (No route matches [GET] "/css/style-mobile.css"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.5ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.6ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 16:26:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-07 16:27:23 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.3ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.2ms)
+  Rendered static_pages/_about.html.erb (22.1ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.2ms)
+  Rendered static_pages/root.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-07 16:27:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.7ms)
+  Rendered static_pages/_me.html.erb (0.6ms)
+  Rendered static_pages/_work.html.erb (1.0ms)
+  Rendered static_pages/_artifacts.html.erb (0.8ms)
+  Rendered static_pages/_about.html.erb (12.7ms)
+  Rendered static_pages/_contact.html.erb (1.1ms)
+  Rendered static_pages/_footer.html.erb (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (49.6ms)
+  Rendered layouts/_flash_messages.html.erb (0.9ms)
+Completed 200 OK in 305ms (Views: 304.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-theme.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/ie/v8.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/style-noscript.css?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/init.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:06 -0700
+
+
+Started GET "/assets/skel.min.js?body=1" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-09 17:05:07 -0700
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-09 17:05:07 -0700

@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  # host: 127.0.0.1
+  host: localhost
+  username: bpatel
+  pool: 5
+  timeout: 5000
+
+# development:
+#   <<: *default
+#   database: db/development
+
+development:
+  adapter: mysql2
+  host: localhost
+  database: mydb_dev
+  username: root
+  password:
+
+production:
+  <<: *default
+  database: db/production
