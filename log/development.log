@@ -4576,3 +4576,538 @@ Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 20
 
 
 Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-10 20:06:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-26 21:21:57 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.8ms)
+  Rendered static_pages/_me.html.erb (0.8ms)
+  Rendered static_pages/_work.html.erb (1.6ms)
+  Rendered static_pages/_artifacts.html.erb (0.7ms)
+  Rendered static_pages/_about.html.erb (17.0ms)
+  Rendered static_pages/_contact.html.erb (1.0ms)
+  Rendered static_pages/_footer.html.erb (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (47.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.8ms)
+Completed 200 OK in 137ms (Views: 136.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-09-26 21:21:58 -0700
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2017-09-26 21:21:58 -0700
+
+
+Started GET "/assets/bhavik_coding.jpg" for 127.0.0.1 at 2017-09-26 21:21:58 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/css/style-mobile.css" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/css/style-mobile.css"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.8ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.6ms)
+
+
+Started GET "/assets/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/wolf3d.png" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/Fractal2.gif" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/hangman.png" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/todo_sinatra.png" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:21:59 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.6ms)
+
+
+Started GET "/assets/favicon.png" for 127.0.0.1 at 2017-09-26 21:22:01 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-26 21:22:41 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.2ms)
+  Rendered static_pages/_me.html.erb (0.6ms)
+  Rendered static_pages/_work.html.erb (0.6ms)
+  Rendered static_pages/_artifacts.html.erb (0.4ms)
+  Rendered static_pages/_about.html.erb (32.1ms)
+  Rendered static_pages/_contact.html.erb (1.5ms)
+  Rendered static_pages/_footer.html.erb (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (59.8ms)
+  Rendered layouts/_flash_messages.html.erb (0.5ms)
+Completed 200 OK in 92ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-09-26 21:22:41 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-26 21:22:41 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-26 21:22:41 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:22:41 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (154.3ms)
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:22:42 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-26 21:24:25 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (1.3ms)
+  Rendered static_pages/_me.html.erb (1.7ms)
+  Rendered static_pages/_work.html.erb (3.4ms)
+  Rendered static_pages/_artifacts.html.erb (0.3ms)
+  Rendered static_pages/_about.html.erb (38.9ms)
+  Rendered static_pages/_contact.html.erb (1.7ms)
+  Rendered static_pages/_footer.html.erb (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (67.5ms)
+  Rendered layouts/_flash_messages.html.erb (0.9ms)
+Completed 200 OK in 91ms (Views: 88.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-09-26 21:24:25 -0700
+
+
+Started GET "/assets/Fractal2.gif" for 127.0.0.1 at 2017-09-26 21:24:25 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-26 21:24:26 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-26 21:24:26 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:24:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (194.5ms)
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:24:27 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.2ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+Processing by StaticPagesController#root as HTML
+  Rendered static_pages/_nav.html.erb (0.4ms)
+  Rendered static_pages/_me.html.erb (0.3ms)
+  Rendered static_pages/_work.html.erb (0.3ms)
+  Rendered static_pages/_artifacts.html.erb (0.7ms)
+  Rendered static_pages/_about.html.erb (26.7ms)
+  Rendered static_pages/_contact.html.erb (0.4ms)
+  Rendered static_pages/_footer.html.erb (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (50.2ms)
+  Rendered layouts/_flash_messages.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+
+
+Started GET "/assets/Fractal2.gif" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+
+
+Started GET "/assets/style-desktop.css" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+
+
+Started GET "/assets/overlay.png" for 127.0.0.1 at 2017-09-26 21:24:44 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/overlay.png"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.16.2.321) lib/new_relic/agent/instrumentation/middleware_tracing.rb:96:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  thin (1.7.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.2) lib/thin/connection.rb:53:in `process'
+  thin (1.7.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.5) lib/eventmachine.rb:194:in `run'
+  thin (1.7.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.5) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.5) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/bhavikpatel/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (237.0ms)
